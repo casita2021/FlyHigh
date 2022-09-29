@@ -1,0 +1,43 @@
+@mixin registrate{
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+    width: 12rem;
+    height: nth($medidas,2);
+    font-size: nth($medidas,1);
+    color: nth($colores,3);
+    background: nth($colores,1);
+    font-weight: 500;
+    border:none;
+    cursor:pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;   
+}
+
+@mixin registrate-span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+@mixin registrate-after{
+    content:"";
+    width: 100%;
+    height: 100%;
+    background:nth($colores,5);
+    position: absolute;
+    z-index:1;
+    top: -80px;
+    left: 0;
+    transition: .3s ease-in-out all;
+}
+@mixin registrate-hover{
+    top: 0;
+}
+@mixin textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+ 
+
